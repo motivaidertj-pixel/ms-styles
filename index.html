@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tg" data-frame-refused-watch=""><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammadali Styles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0b0c10;--bg2:#13151c;--fg:#f3ede0;--mut:#9a9486;--line:#2b2d36;--gold:#d4af37;--gold2:#f0d98a;--goldg:linear-gradient(135deg,#b8892b,#f0d98a 50%,#b8892b);--red:#d4af37;--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--sans:'Montserrat',Helvetica,Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:radial-gradient(1200px 600px at 50% -200px,#1b1d28,var(--bg));background-color:var(--bg);color:var(--fg);font-family:var(--sans);font-size:14px}
+button{font-family:inherit;cursor:pointer}
+input,select,textarea{font-size:16px;background:var(--bg2);color:var(--fg);font-family:inherit}
+.promo{background:var(--goldg);color:#1a1405;font-size:12px;font-weight:600;letter-spacing:.06em;padding:9px 14px;white-space:nowrap;overflow-x:auto;text-align:center}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px;gap:8px;border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);font-size:25px;font-weight:700;letter-spacing:.04em;color:var(--fg)}.logo span{background:var(--goldg);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hr{display:flex;gap:6px;align-items:center}
+.lg button{border:1px solid var(--line);background:transparent;color:var(--mut);padding:6px 8px;font-size:11px;border-radius:6px;letter-spacing:.05em}
+.lg button.on{border-color:var(--gold);color:var(--gold)}
+.bag{position:relative;font-size:21px;background:none;border:0;color:var(--gold);padding:4px 8px}
+.bag b{position:absolute;top:-2px;right:-2px;background:var(--gold);color:#1a1405;border-radius:10px;font-size:10px;padding:1px 6px}
+.ab{padding:7px 10px;border:1px solid var(--gold);border-radius:20px;background:transparent;color:var(--gold);font-size:12px}
+.wrap{padding:0 14px 30px;max-width:1100px;margin:auto}
+#q{width:100%;padding:13px 18px;border:1px solid var(--line);border-radius:30px;margin-top:16px}
+#q:focus{outline:none;border-color:var(--gold)}
+h1{font-family:var(--serif);font-size:36px;font-weight:600;margin:26px 0 6px;text-align:center;letter-spacing:.02em}h1 small{font-family:var(--sans);font-size:13px;color:var(--mut);font-weight:400}
+h1:after{content:"";display:block;width:70px;height:2px;background:var(--goldg);margin:10px auto 0}
+.pills{display:flex;gap:10px;overflow-x:auto;padding:14px 2px}
+.pill{flex:none;padding:10px 18px;border-radius:30px;border:1px solid var(--line);background:transparent;color:var(--fg);font-size:13px;letter-spacing:.03em}
+.pill.on{background:var(--goldg);color:#1a1405;border-color:var(--gold);font-weight:600}
+#sort{padding:10px;border:1px solid var(--line);border-radius:6px;margin:4px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr);gap:20px}}
+.grid>div{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:8px 8px 12px;transition:border-color .2s}
+.grid>div:hover{border-color:var(--gold)}
+.ph{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:64px;font-weight:700;color:rgba(255,255,255,.8);overflow:hidden;cursor:pointer;border-radius:6px}
+.ph img{width:100%;height:100%;object-fit:contain}
+.brand{font-family:var(--serif);font-weight:700;font-size:17px;margin-top:10px;letter-spacing:.02em}.nm{font-size:12px;color:var(--mut);margin:3px 0 6px;line-height:1.4}
+.pr{color:var(--gold2);font-weight:600;font-size:15px}.old{color:var(--mut);text-decoration:line-through;font-size:12px;margin-left:6px}
+.btn{width:100%;padding:12px;border:0;border-radius:6px;background:var(--goldg);color:#1a1405;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;display:block;text-align:center;text-decoration:none;margin-top:10px}
+.empty{color:var(--mut);padding:30px 0;text-align:center}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:50;overflow-y:auto;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+.sheet{background:var(--bg2);border:1px solid var(--gold);max-width:520px;margin:20px auto;border-radius:12px;padding:16px;position:relative}
+.sheet h2{font-family:var(--serif);font-size:26px}
+.x{position:absolute;top:8px;right:10px;border:0;background:none;color:var(--gold);font-size:28px;z-index:2}
+.big{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:90px;font-weight:700;color:rgba(255,255,255,.8);overflow:hidden;border-radius:8px;margin-top:24px}
+.big img{width:100%;height:auto;max-height:78vh;object-fit:contain;display:block}
+.th{display:flex;gap:8px;margin:8px 0;overflow-x:auto}.th img{width:56px;height:70px;object-fit:cover;border-radius:4px;border:2px solid transparent;cursor:pointer}.th img.on{border-color:var(--gold)}
+.szs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.sz{min-width:48px;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--fg)}
+.sz.on{border-color:var(--gold);background:var(--gold);color:#1a1405;font-weight:700}
+.ci{display:flex;justify-content:space-between;gap:8px;padding:12px 0;border-top:1px solid var(--line);font-size:13px;align-items:center}
+.ci button{border:1px solid var(--gold);background:transparent;color:var(--gold);border-radius:6px;padding:4px 10px}
+.tot{font-family:var(--serif);font-weight:700;font-size:24px;margin:14px 0;color:var(--gold2)}
+footer{padding:28px 14px;text-align:center;color:var(--mut);font-size:13px;border-top:1px solid var(--line);background:var(--bg2)}
+footer a{color:var(--gold);margin:0 8px;font-weight:600;text-decoration:none}
+#adm{display:none}#adm.open{display:block;background:var(--bg2);border:1px solid var(--gold);border-radius:10px;padding:14px;margin:12px 14px;max-width:1072px}
+@media(min-width:1100px){#adm.open{margin:12px auto}}
+#adm h2{margin:16px 0 6px;font-size:20px;font-family:var(--serif);color:var(--gold2)}#adm h2:first-child{margin-top:0}
+#adm label{display:block;font-size:12px;color:var(--mut);margin:8px 0 3px}
+#adm input,#adm select{width:100%;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--bg)}
+#adm .row{display:flex;gap:8px}#adm .row>div{flex:1}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:12px;padding-bottom:4px}.tb{flex:none;padding:9px 13px;border:1px solid var(--line);border-radius:20px;background:transparent;color:var(--fg);font-size:13px}.tb.on{background:var(--goldg);color:#1a1405;border-color:var(--gold);font-weight:600}.sec{color:var(--gold2)!important;font-weight:600;font-size:14px!important;margin-top:16px!important}
+.cin{width:100%;padding:12px;border:1px solid var(--line);border-radius:6px;margin-top:8px;background:var(--bg)}#cerr{color:#e07a77;font-size:13px;margin-top:6px}.cg{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:6px 0 12px;padding:8px;border:1px solid var(--line);border-radius:8px}.dl{border:1px solid #c0504d;color:#e07a77;background:none;border-radius:6px;padding:8px}
+#adm textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);font-size:14px}
+.big{position:relative}.big.has{aspect-ratio:auto;min-height:200px;background:#0b0c10!important}
+.nv{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:1px solid var(--gold);background:rgba(11,12,16,.7);color:var(--gold);font-size:22px;line-height:1}.nv.l{left:8px}.nv.r{right:8px}
+.cn{position:absolute;bottom:8px;right:10px;background:rgba(11,12,16,.7);color:var(--gold2);font-size:12px;padding:2px 8px;border-radius:10px}
+.th img{object-fit:contain!important;background:#101118}.pv img{object-fit:contain!important;background:#101118}
+.stg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 12px}.st{border:1px solid var(--gold);border-radius:8px;padding:10px;background:rgba(212,175,55,.06)}.st span{display:block;color:var(--mut);font-size:12px}.st b{font-family:var(--serif);font-size:24px;color:var(--gold2)}.st small{display:block;color:var(--mut)}
+.bar{display:flex;align-items:center;gap:8px;font-size:12px;margin:4px 0}.bar span{width:42px;color:var(--mut)}.bar i{display:block;height:10px;background:var(--goldg);border-radius:5px;min-width:2px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:80;background:var(--bg2);border:1px solid var(--gold);color:var(--fg);border-radius:30px;padding:10px 12px 10px 18px;display:flex;gap:12px;align-items:center;font-size:13px;box-shadow:0 6px 24px rgba(0,0,0,.5);white-space:nowrap}.toast button{background:var(--goldg);color:#1a1405;border:0;border-radius:20px;padding:7px 14px;font-weight:700}
+.oc{border:1px solid var(--line);border-radius:16px;padding:14px;margin:10px 0;background:var(--bg)}.oh{display:flex;justify-content:space-between;align-items:center;gap:8px}.oh b{font-size:15px}.oh select{width:auto!important;max-width:50%;border-radius:12px!important}.on{font-size:15px;margin:8px 0 2px}.pg{color:var(--gold)}.oa{color:var(--mut);font-size:13px;line-height:1.5}.ot{color:var(--gold2);font-weight:700;margin-top:6px;font-size:15px}.gb{flex:1;border:1px solid var(--gold)!important;color:var(--gold)!important;background:none;border-radius:8px;padding:8px}.rb{flex:1;border:1px solid #c0504d!important;color:#e07a77!important;background:none;border-radius:8px;padding:8px}
+.wab{border:1px solid var(--gold);border-radius:8px;padding:12px;margin-bottom:14px;background:rgba(212,175,55,.07)}
+#msg{font-size:13px;margin-top:8px;color:var(--gold2)}
+.al{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:13px}
+.al button{border:1px solid #c0504d;color:#e07a77;background:none;border-radius:6px;padding:6px 10px}
+.pv{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.pv img{width:60px;height:75px;object-fit:cover;border-radius:4px}
+</style>
+
+</head>
+<body>
+<div id="top"></div>
+<div id="adm" class=""></div>
+<div class="wrap">
+<input type="search" id="q">
+<h1 id="hd"></h1>
+<div class="pills" id="pills"></div>
+<select id="sort"></select>
+<div class="grid" id="grid"></div>
+<div class="empty" id="empty" hidden="">Чизе ёфт нашуд.</div>
+</div>
+<footer id="foot"></footer>
+<div id="modal"></div>
+<script id="data" type="application/json">{"S": {"promo": {"tg": "Тахфифи иловагӣ 30% бо код FRIEND · Расонидан ройгон аз 400 сомонӣ", "ru": "Доп. скидка 30% по коду FRIEND · Бесплатная доставка от 400 сомони", "en": "Extra 30% off with code FRIEND · Free shipping over 400 TJS", "uz": "Buyurtma 400 somonidan - yetkazish bepul"}, "head": {"tg": "Либосҳои мардона", "ru": "Мужская одежда", "en": "Men's Clothing", "uz": "Erkaklar kiyimi"}, "foot": {"tg": "Барои фармоиш бо мо тамос гиред", "ru": "Для заказа свяжитесь с нами", "en": "Contact us to order", "uz": "Buyurtma uchun biz bilan bog'laning"}, "wa": "992918321569", "phone": "+992 918321569", "ig": "https://instagram.com/muhammadali.styles", "tgl": "https://t.me/muhammadali_styles"}, "P": [{"id": "a1", "b": "Polo Ralph Lauren", "n": "Куртаи оксфорд, ранги сафед", "c": "shirts", "o": 320, "p": 180, "col": "#8aa0b8", "imgs": [], "sz": ["S", "M", "L", "XL"]}, {"id": "a2", "b": "Tommy Hilfiger", "n": "Костюми Modern-Fit, пашм", "c": "suits", "o": 1450, "p": 945, "col": "#1f3a6e", "imgs": [], "sz": ["36S", "38S", "40S", "42S"]}, {"id": "a3", "b": "Levi's", "n": "Ҷинси 511 Slim Fit", "c": "jeans", "o": 380, "p": 250, "col": "#3b5b82", "imgs": [], "sz": ["30", "32", "34", "36"]}, {"id": "a4", "b": "Calvin Klein", "n": "Шими классикӣ, хокистарӣ", "c": "pants", "o": 420, "p": 260, "col": "#555a63", "imgs": [], "sz": ["30", "32", "34", "36"]}, {"id": "a5", "b": "Nautica", "n": "Свитери пашмин", "c": "sweaters", "o": 360, "p": 210, "col": "#6b3a3a", "imgs": [], "sz": ["S", "M", "L", "XL"]}, {"id": "a6", "b": "Nike", "n": "Кроссовкаи Air Force 1", "c": "shoes", "o": 900, "p": 650, "col": "#7d8590", "imgs": [], "sz": ["40", "41", "42", "43", "44"]}, {"id": "a7", "b": "The North Face", "n": "Курткаи зимистона", "c": "jackets", "o": 1300, "p": 880, "col": "#222", "imgs": [], "sz": ["M", "L", "XL"]}, {"id": "a8", "b": "Schott", "n": "Кожаная куртка, чарми воқеӣ", "c": "leather", "o": 2200, "p": 1600, "col": "#3b2a20", "imgs": [], "sz": ["M", "L", "XL"]}, {"id": "a9", "b": "MS Style", "n": "Маҷмӯаи MS: куртаи сафед + шими сиёҳ", "c": "ms", "o": 700, "p": 520, "col": "#2f6f5e", "imgs": [], "sz": ["S", "M", "L"]}, {"id": "p1793650925543", "b": "Polo", "n": "Polo", "c": "shirts", "o": 150, "p": 99, "col": "#2f6f5e", "imgs": [], "sz": ["S M L XL"]}, {"id": "p1793650990588", "b": "Polo", "n": "Elpolo", "c": "jackets", "o": 150, "p": 99, "col": "#2f6f5e", "imgs": [], "sz": ["S", "M", "L"]}], "C": [["shirts", "Куртаҳо", "Рубашки", "Shirts", "Ko'ylaklar"], ["jackets", "Куртка", "Куртки", "Jackets", "Kurtkalar"], ["leather", "Кожинка", "Кожаные куртки", "Leather jackets", "Charm kurtkalar"], ["suits", "Костюмҳо", "Костюмы", "Suits", "Kostyumlar"], ["pants", "Шимҳо", "Брюки", "Pants", "Shimlar"], ["jeans", "Ҷинс", "Джинсы", "Jeans", "Jinsi"], ["sweaters", "Свитерҳо", "Свитеры", "Sweaters", "Sviterlar"], ["shoes", "Пойафзолҳо", "Обувь", "Shoes", "Poyabzallar"], ["ms", "Стиль аз MS", "Стиль от MS", "MS Style", "MS uslubi"]]}</script>
+<script>
+var ALL=["all","Ҳама","Все","All","Hammasi"];function cats(){return[ALL].concat(C)}
+var T={added:["Ба сабад илова шуд","Добавлено в корзину","Added to bag","Savatga qo'shildi"],view:["Сабад","Корзина","View bag","Savat"],more:["Идома додани харид","Продолжить покупки","Continue shopping","Xaridni davom ettirish"],chk:["Чек","Чек","Receipt","Chek"],dl:["Чекро захира кардан","Сохранить чек","Save receipt","Chekni saqlash"],thx:["Ташаккур! Фармоиш ба WhatsApp фиристода шуд.","Спасибо! Заказ отправлен в WhatsApp.","Thank you! Your order was sent to WhatsApp.","Rahmat! Buyurtma WhatsApp'ga yuborildi."],shot:["Агар тугма кор накунад, скриншот гиред.","Если кнопка не работает, сделайте скриншот.","If the button does not work, take a screenshot.","Tugma ishlamasa, skrinshot oling."],ph:["Рақами телефон","Номер телефона","Phone number","Telefon raqami"],ad:["Суроға","Адрес","Address","Manzil"],req:["Ном, рақам ва суроғаро пур кунед","Заполните имя, телефон и адрес","Fill in name, phone and address","Ism, telefon va manzilni kiriting"],search:["Ҷустуҷӯ...","Поиск...","Search...","Qidirish..."],s0:["Нав","Новинки","Newest","Yangi"],s1:["Нарх: арзон","Цена: дешевле","Price: low","Narx: arzon"],s2:["Нарх: гарон","Цена: дороже","Price: high","Narx: qimmat"],empty:["Чизе ёфт нашуд.","Ничего не найдено.","Nothing found.","Hech narsa topilmadi."],cur:["сомонӣ","сомони","TJS","somoni"],size:["Андоза","Размер","Size","O'lcham"],pick:["Андозаро интихоб кунед","Выберите размер","Choose a size","O'lchamni tanlang"],add:["Ба сабад","В корзину","Add to bag","Savatga"],bag:["Сабад","Корзина","Bag","Savat"],none:["Сабад холӣ аст","Корзина пуста","Your bag is empty","Savat bo'sh"],tot:["Ҷамъ","Итого","Total","Jami"],buy:["Фармоиш дар WhatsApp","Заказать в WhatsApp","Order via WhatsApp","WhatsApp orqali buyurtma"],nm:["Номи шумо","Ваше имя","Your name","Ismingiz"],ord:["Фармоиш","Заказ","Order","Buyurtma"],cont:["Тамос","Контакты","Contact","Aloqa"]};
+var D=JSON.parse(document.getElementById("data").textContent),S=D.S,P=D.P,C=D.C;
+var L=0,cat="all",cart=[],M=null,newImgs=[],ART=null,AST=null,CAN=false,LN=["tg","ru","en","uz"];
+try{var sv=localStorage.getItem("lang");if(sv)L=+sv||0}catch(e){}
+function $(i){return document.getElementById(i)}
+function t(k){return T[k][L]}
+function tx(o){return o[LN[L]]||o.tg||""}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function pf(id){return P.filter(function(p){return p.id==id})[0]}
+function setL(i){L=i;try{localStorage.setItem("lang",i)}catch(e){}all()}
+function all(){renderTop();stat();pills();grid();foot();if(M)modal();if($("modal").dataset.cart)cartv()}
+function stat(){$("q").placeholder=t("search");$("sort").innerHTML=["s0","s1","s2"].map(function(k,i){return'<option value="'+i+'">'+t(k)+'</option>'}).join("");$("hd").innerHTML=esc(tx(S.head))+' <small id="tot"></small>';$("empty").textContent=t("empty")}
+function cnt(){return cart.reduce(function(a,c){return a+c.q},0)}
+function renderTop(){$("top").innerHTML='<div class="promo">'+esc(tx(S.promo))+'</div><header><div class="logo">Muhammadali <span>Styles</span></div><div class="hr"><span class="lg">'+["TJ","RU","EN","UZ"].map(function(x,i){return'<button class="'+(i==L?"on":"")+'" onclick="setL('+i+')">'+x+'</button>'}).join("")+'</span>'+(CAN?'<button class="ab" onclick="tAdm()">⚙</button>':'')+'<button class="bag" onclick="cartv()">🛍<b>'+cnt()+'</b></button></div></header>'}
+function pills(){$("pills").innerHTML=cats().map(function(c){return'<button class="pill'+(c[0]==cat?" on":"")+'" onclick="cat=\''+c[0]+'\';pills();grid()">'+c[1+L]+'</button>'}).join("")}
+function grid(){
+var q=$("q").value.toLowerCase(),s=$("sort").value;
+var l=P.filter(function(p){return(cat=="all"||p.c==cat)&&(p.b+p.n).toLowerCase().indexOf(q)>-1});
+if(s=="1")l.sort(function(a,b){return a.p-b.p});else if(s=="2")l.sort(function(a,b){return b.p-a.p});else l=l.slice().reverse();
+if($("tot"))$("tot").textContent="("+l.length+")";$("empty").hidden=l.length>0;
+$("grid").innerHTML=l.map(function(p){var im=p.imgs&&p.imgs[0]?'<img src="'+esc(p.imgs[0])+'" alt="">':esc(p.b[0]);return'<div><div class="ph" style="background:'+esc(p.imgs&&p.imgs[0]?"#101118":(p.col||"#888"))+'" onclick="op(\''+p.id+'\')">'+im+'</div><div class="brand">'+esc(p.b)+'</div><div class="nm">'+esc(p.n)+'</div><div><span class="pr">'+p.p+' '+t("cur")+'</span>'+(p.o>p.p?'<span class="old">'+p.o+'</span>':'')+'</div><button class="btn" onclick="op(\''+p.id+'\')">'+t("add")+'</button></div>'}).join("")}
+function op(id){M={id:id,i:0,s:""};modal()}
+function cl(){M=null;$("modal").innerHTML="";$("modal").dataset.cart=""}
+function modal(){var p=pf(M.id);if(!p){cl();return}var im=p.imgs||[];
+$("modal").innerHTML='<div class="ov"><div class="sheet"><button class="x" onclick="cl()">×</button><div class="big'+(im[M.i]?" has":"")+'" style="background:'+esc(p.col||"#888")+'">'+(im[M.i]?'<img src="'+esc(im[M.i])+'" alt="">':esc(p.b[0]))+(im.length>1?'<button class="nv l" onclick="M.i=(M.i+'+(im.length-1)+')%'+im.length+';modal()">‹</button><button class="nv r" onclick="M.i=(M.i+1)%'+im.length+';modal()">›</button><span class="cn">'+(M.i+1)+'/'+im.length+'</span>':'')+'</div>'+(im.length>1?'<div class="th">'+im.map(function(u,i){return'<img class="'+(i==M.i?"on":"")+'" src="'+esc(u)+'" onclick="M.i='+i+';modal()">'}).join("")+'</div>':'')+'<div class="brand">'+esc(p.b)+'</div><div class="nm">'+esc(p.n)+'</div><div><span class="pr">'+p.p+' '+t("cur")+'</span>'+(p.o>p.p?'<span class="old">'+p.o+'</span>':'')+'</div><div style="margin-top:10px">'+t("size")+':</div><div class="szs">'+(p.sz||[]).map(function(s){return'<button class="sz'+(s==M.s?" on":"")+'" onclick="M.s=\''+esc(s)+'\';modal()">'+esc(s)+'</button>'}).join("")+'</div><button class="btn" onclick="addc()">'+t("add")+'</button><div id="mm" style="color:var(--red);font-size:13px;margin-top:6px"></div></div></div>'}
+function addc(){var p=pf(M.id);if((p.sz||[]).length&&!M.s){$("mm").textContent=t("pick");return}
+var e=cart.filter(function(c){return c.id==M.id&&c.s==M.s})[0];if(e)e.q++;else cart.push({id:M.id,s:M.s,q:1});cl();renderTop();toast()}
+function toast(){var o=$("toast");if(o)o.remove();var d=document.createElement("div");d.id="toast";d.className="toast";d.innerHTML="<span>✓ "+t("added")+"</span><button onclick=\"this.parentNode.remove();cartv()\">"+t("view")+"</button>";document.body.appendChild(d);setTimeout(function(){if(d.parentNode)d.remove()},3500)}
+function cartv(){M=null;var h='',tot=0,v0=$("cn")?[$("cn").value,$("cp").value,$("ca").value]:["","",""];
+cart.forEach(function(c,i){var p=pf(c.id);if(!p)return;tot+=p.p*c.q;h+='<div class="ci"><span>'+esc(p.b)+' — '+esc(p.n)+(c.s?' ('+esc(c.s)+')':'')+'<br><b>'+p.p*c.q+' '+t("cur")+'</b></span><span><button onclick="cq('+i+',-1)">−</button> '+c.q+' <button onclick="cq('+i+',1)">+</button></span></div>'});
+$("modal").dataset.cart="1";
+$("modal").innerHTML='<div class="ov"><div class="sheet"><button class="x" onclick="cl()">×</button><h2 style="margin:0 0 8px">'+t("bag")+'</h2>'+(h||'<div class="empty">'+t("none")+'</div>')+(h?'<button class="btn" style="background:transparent;border:1px solid var(--gold);color:var(--gold)" onclick="cl()">'+t("more")+'</button><div class="tot">'+t("tot")+': '+tot+' '+t("cur")+'</div><input class="cin" id="cn" placeholder="'+t("nm")+'" value="'+esc(v0[0])+'"><input class="cin" id="cp" type="tel" placeholder="'+t("ph")+'" value="'+esc(v0[1])+'"><input class="cin" id="ca" placeholder="'+t("ad")+'" value="'+esc(v0[2])+'"><div id="cerr"></div><a class="btn" id="wa" href="#" target="_blank" rel="noopener" onclick="return go(this)">'+t("buy")+'</a>':'')+'</div></div>'}
+function cq(i,d){cart[i].q+=d;if(cart[i].q<1)cart.splice(i,1);renderTop();cartv()}
+function mkNo(){var d=new Date(),z=function(n){return("0"+n).slice(-2)};return"MS-"+String(d.getFullYear()).slice(2)+z(d.getMonth()+1)+z(d.getDate())+z(d.getHours())+z(d.getMinutes())+z(d.getSeconds())+"-"+(1000+Math.floor(Math.random()*9000))}
+function curOrder(){var tot=0,items=cart.map(function(c){var p=pf(c.id);tot+=p.p*c.q;return{t:p.b+" - "+p.n,s:c.s,q:c.q,p:p.p}});return{no:mkNo(),ts:Date.now(),items:items,tot:tot,cust:fv("cn"),phone:fv("cp"),addr:fv("ca")}}
+function enc(o){return btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}
+function dec(x){x=x.replace(/-/g,"+").replace(/_/g,"/");while(x.length%4)x+="=";return JSON.parse(decodeURIComponent(escape(atob(x))))}
+function il(i,k){return(k+1)+". "+i.t+(i.s?" ["+i.s+"]":"")+" x"+i.q+" = "+i.p*i.q+" "+t("cur")}
+function rcpt(o){var l=["MUHAMMADALI STYLES","№ "+o.no,new Date(o.ts).toLocaleString(),"",t("nm")+": "+o.cust,t("ph")+": "+o.phone,t("ad")+": "+o.addr,""];o.items.forEach(function(i,k){l.push(il(i,k))});l.push("",t("tot")+": "+o.tot+" "+t("cur"));return l.join("\n")}
+function showRc(o){$("modal").dataset.cart="";$("modal").innerHTML='<div class="ov"><div class="sheet"><button class="x" onclick="cl()">×</button><h2 style="margin:0 0 8px">'+t("chk")+'</h2><pre style="white-space:pre-wrap;font-family:var(--sans);font-size:13px;background:var(--bg);border:1px dashed var(--gold);padding:12px;border-radius:8px">'+esc(rcpt(o))+'</pre></div></div>'}
+function showThx(){$("modal").dataset.cart="";$("modal").innerHTML='<div class="ov"><div class="sheet" style="text-align:center;padding:28px 16px"><button class="x" onclick="cl()">×</button><div style="font-size:40px;color:var(--gold)">✓</div><div style="font-family:var(--serif);font-size:24px;margin:10px 0">'+t("thx")+'</div><button class="btn" onclick="cl()">OK</button></div></div>'}
+function go(a){if(!fv("cn")||!fv("cp")||!fv("ca")){$("cerr").textContent=t("req");return false}var o=curOrder();a.href=wau(o);fetch("/api/order",{method:"POST",body:JSON.stringify(o),keepalive:true}).catch(function(){});setTimeout(function(){showThx();cart=[];renderTop()},400);return true}
+function wau(o){var m="Muhammadali Styles\n"+t("ord")+":\n"+t("nm")+": "+o.cust+"\n"+t("ph")+": "+o.phone+"\n"+t("ad")+": "+o.addr+"\n\n"+o.items.map(il).join("\n")+"\n"+t("tot")+": "+o.tot+" "+t("cur")+"\n№ "+o.no;return"https://wa.me/"+String(S.wa||"").replace(/\D/g,"")+"?text="+encodeURIComponent(m)}
+function foot(){$("foot").innerHTML='<div style="margin-bottom:10px">'+esc(tx(S.foot))+'</div><div>'+(S.phone?'<a href="tel:'+esc(String(S.phone).replace(/[^\d+]/g,""))+'">'+esc(S.phone)+'</a>':'')+'<a href="https://wa.me/'+esc(String(S.wa||"").replace(/\D/g,""))+'" target="_blank" rel="noopener">WhatsApp</a>'+(S.ig?'<a href="'+esc(S.ig)+'" target="_blank" rel="noopener">Instagram</a>':'')+(S.tgl?'<a href="'+esc(S.tgl)+'" target="_blank" rel="noopener">Telegram</a>':'')+'</div><div style="margin-top:12px">© Muhammadali Styles</div>'}
+$("q").oninput=grid;$("sort").onchange=grid;
+
+/* ---- Админ ---- */
+var AT="ads",AUTH=false,DB=null,LB=["Тоҷикӣ","Русский","English","O'zbekcha"];
+function ss(k,v){try{sessionStorage.setItem(k,v)}catch(e){}}
+function gs(k){try{return sessionStorage.getItem(k)||""}catch(e){return""}}
+function sha(x){if(!window.crypto||!crypto.subtle)return Promise.reject();return crypto.subtle.digest("SHA-256",new TextEncoder().encode(x)).then(function(b){return[].map.call(new Uint8Array(b),function(v){return("0"+v.toString(16)).slice(-2)}).join("")})}
+function msg(x){if($("msg"))$("msg").textContent=x}
+function tAdm(){var a=$("adm");if(a.className=="open"){a.className="";a.innerHTML="";ss("ms_open","");return}a.className="open";if(!AUTH){login();return}ss("ms_open","1");adm()}
+function login(){$("adm").innerHTML='<div class="wab"><b style="color:var(--gold2)">🔒 Вуруд ба админ панел</b><label>Парол</label><input id="lp" type="password" autocomplete="current-password"><button class="btn" onclick="dologin()">Ворид шудан</button><div id="msg"></div></div>'}
+function dologin(){fetch("/api/login",{method:"POST",body:JSON.stringify({password:$("lp").value})}).then(function(r){return r.json()}).then(function(j){if(j.token){ss("ms_tok",j.token);AUTH=true;ss("ms_auth","1");ss("ms_open","1");adm()}else msg(j.error||"Парол нодуруст аст.")}).catch(function(){msg("Пайваст нашуд.")})}
+function logout(){AUTH=false;ss("ms_auth","");ss("ms_open","");ss("ms_tok","");$("adm").className="";$("adm").innerHTML=""}
+function atab(x){AT=x;ss("ms_tab",x);adm()}
+function tri(k){return LN.map(function(l,i){return'<label>'+LB[i]+'</label><input id="'+k+i+'" value="'+esc(S[k][l]||"")+'">'}).join("")}
+function fv(i){return $(i).value.trim()}
+function fld(id,lb,v,ex){return'<label>'+lb+'</label><input id="'+id+'" value="'+esc(v)+'" '+(ex||"")+'>'}
+function pop(){return P.map(function(p){return'<option value="'+p.id+'">'+esc(p.b)+' — '+esc(p.n)+'</option>'}).join("")}
+function catTab(){var h='<label class="sec">Категорияҳо (ном бо 4 забон: TJ · RU · EN · UZ)</label>';
+C.forEach(function(c,i){h+='<div class="cg">'+[1,2,3,4].map(function(j){return'<input id="c'+i+'_'+j+'" value="'+esc(c[j])+'">'}).join("")+'<button class="dl" style="grid-column:1/3" onclick="cdel('+i+')">Нест кардан</button></div>'});
+return h+'<label class="sec">Категорияи нав</label><div class="cg">'+[1,2,3,4].map(function(j){return'<input id="cn'+j+'" placeholder="'+LB[j-1]+'">'}).join("")+'</div><button class="btn" onclick="scat()">Сабт ва нашр</button><div id="msg"></div>'}
+function adm(){
+var tabs=[["ads","📣 Реклама"],["con","📞 Тамос"],["cat","🏷 Категория"],["add","➕ Маҳсулот"],["lst","📋 Рӯйхат"],["sal","🧾 История фурӯш"],["pwd","🔑 Парол"]];
+var h='<div class="tabs">'+tabs.map(function(x){return'<button class="tb'+(x[0]==AT?" on":"")+'" onclick="atab(\''+x[0]+'\')">'+x[1]+'</button>'}).join("")+'<button class="tb" onclick="logout()">🚪 Баромад</button></div>';
+if(AT=="ads")h+='<label class="sec">Реклама дар боло</label>'+tri("promo")+'<label class="sec">Сарлавҳаи каталог</label>'+tri("head")+'<label class="sec">Матни тамос дар поён</label>'+tri("foot")+'<button class="btn" onclick="sads()">Сабт ва нашр</button><div id="msg"></div>';
+else if(AT=="con")h+='<div class="wab"><b style="color:var(--gold2)">WhatsApp барои қабули фармоишҳо</b>'+fld("swa","Рақам бо рамзи кишвар, бе + (масалан 992901234567)",S.wa,'inputmode="numeric"')+'</div>'+fld("sph","Телефон дар поёни сайт",S.phone)+fld("sig","Истиноди Instagram",S.ig)+fld("stg","Истиноди Telegram",S.tgl)+'<button class="btn" onclick="scon()">Сабт ва нашр</button><div id="msg"></div>';
+else if(AT=="cat")h+=catTab();
+else if(AT=="add")h+='<label>Бренд</label><input id="fb"><label>Ном</label><input id="fn"><label>Категория</label><select id="fc">'+C.map(function(c){return'<option value="'+c[0]+'">'+esc(c[1])+'</option>'}).join("")+'</select><div class="row"><div><label>Нархи кӯҳна</label><input id="fo" type="number" inputmode="numeric"></div><div><label>Нархи нав</label><input id="fp" type="number" inputmode="numeric"></div></div><label>Андозаҳо (бо вергул): S,M,L,XL ё 40,41,42</label><input id="fs" placeholder="S,M,L,XL">'+(AST?'<label>Расмҳо (якчанд интихоб кунед)</label><input id="ff" type="file" accept="image/*" multiple><div class="pv" id="pv"></div>':'<label>Ранг (бе расм)</label><input id="fcol" type="color" value="#2f6f5e">')+'<button class="btn" onclick="padd()">Илова ва нашр кардан</button><div id="msg"></div>';
+else if(AT=="sal")h+=DB?'<div id="msg"></div><label class="sec">Фурӯши дастӣ</label><label>Маҳсулот</label><select id="po" onchange="ppr()">'+pop()+'</select><div class="row"><div><label>Андоза</label><input id="sz1"></div><div><label>Миқдор</label><input id="sq" type="number" value="1" inputmode="numeric"></div><div><label>Нарх (як дона)</label><input id="spr" type="number" inputmode="numeric"></div></div><label>Ном</label><input id="scn"><label>Телефон</label><input id="scp"><label>Суроға</label><input id="sca"><button class="btn" onclick="sadd()">Сабт кардан</button><label class="sec">История</label><div id="sl">...</div>':'<div class="empty">История дастнорас аст (db).</div>';
+else if(AT=="pwd")h+='<label class="sec">Иваз кардани парол</label><label>Пароли нав</label><input id="np1" type="password"><label>Такрори парол</label><input id="np2" type="password"><button class="btn" onclick="spw()">Сабт ва нашр</button><div id="msg"></div>';
+else if(AT=="edit")h+=editForm();
+else h+='<div id="al"></div><div id="msg"></div>';
+$("adm").innerHTML=h;
+if(AT=="add"){newImgs=[];var ff=$("ff");
+if(ff)ff.onchange=function(){var fs=[].slice.call(ff.files);if(!fs.length)return;msg("Расмҳо бор мешаванд...");newImgs=[];$("pv").innerHTML="";
+fs.reduce(function(pr,f){return pr.then(function(){return AST.upload(f).then(function(a){newImgs.push(a.url);$("pv").innerHTML+='<img src="'+esc(a.url)+'">'})})},Promise.resolve()).then(function(){msg(newImgs.length+" расм омода шуд.")}).catch(function(){msg("Баъзе расмҳо бор нашуданд.")})}}
+if(AT=="lst")al();if(AT=="edit")edBind();if(AT=="sal"&&DB){ppr();lsal()}}
+function al(){var e=$("al");if(!e)return;e.innerHTML=P.map(function(p){return'<div class="al" style="flex-wrap:wrap"><span style="flex:1 1 100%">'+esc(p.b)+' — '+esc(p.n)+' ('+p.p+')</span><select onchange="pcat(\''+p.id+'\',this.value)" style="flex:1">'+C.map(function(c){return'<option value="'+c[0]+'"'+(c[0]==p.c?" selected":"")+'>'+esc(c[1])+'</option>'}).join("")+'</select><button style="border-color:var(--gold);color:var(--gold)" onclick="pedit(\''+p.id+'\')">Таҳрир</button><button onclick="pdel(\''+p.id+'\')">Нест</button></div>'}).join("")+'<button class="btn" onclick="save()">Сабти категорияҳо ва нашр</button>'}
+var EID="",EI=[];
+function pedit(id){var p=pf(id);if(!p)return;EID=id;EI=(p.imgs||[]).slice();AT="edit";adm()}
+function editForm(){var p=pf(EID);if(!p)return"";
+return'<label class="sec">Таҳрири маҳсулот</label><label>Бренд</label><input id="eb" value="'+esc(p.b)+'"><label>Ном</label><input id="en" value="'+esc(p.n)+'"><label>Категория</label><select id="ec">'+C.map(function(c){return'<option value="'+c[0]+'"'+(c[0]==p.c?" selected":"")+'>'+esc(c[1])+'</option>'}).join("")+'</select><div class="row"><div><label>Нархи кӯҳна</label><input id="eo" type="number" inputmode="numeric" value="'+p.o+'"></div><div><label>Нархи нав</label><input id="ep" type="number" inputmode="numeric" value="'+p.p+'"></div></div><label>Андозаҳо (бо вергул)</label><input id="es" value="'+esc((p.sz||[]).join(","))+'"><label>Ранг (агар расм набошад)</label><input id="ecol" type="color" value="'+(/^#[0-9a-f]{6}$/i.test(p.col)?p.col:"#2f6f5e")+'"><label>Расмҳо (бо × нест кунед)</label><div class="pv" id="epv"></div>'+(AST?'<label>Расми нав илова кунед</label><input id="ef" type="file" accept="image/*" multiple>':'')+'<button class="btn" onclick="esave()">Сабт ва нашр</button><button class="btn" style="background:transparent;border:1px solid var(--gold);color:var(--gold)" onclick="atab(\'lst\')">Бозгашт</button><div id="msg"></div>'}
+function eimgs(){var e=$("epv");if(!e)return;e.innerHTML=EI.map(function(u,i){return'<div style="position:relative"><img src="'+esc(u)+'"><button onclick="edel('+i+')" style="position:absolute;top:0;right:0;background:#c0504d;color:#fff;border:0;border-radius:50%;width:22px;height:22px">×</button></div>'}).join("")}
+function edel(i){EI.splice(i,1);eimgs()}
+function edBind(){eimgs();var f=$("ef");if(f)f.onchange=function(){var fs=[].slice.call(f.files);if(!fs.length)return;msg("Расмҳо бор мешаванд...");fs.reduce(function(pr,x){return pr.then(function(){return AST.upload(x).then(function(a){EI.push(a.url);eimgs()})})},Promise.resolve()).then(function(){msg("Расмҳо илова шуданд.")}).catch(function(){msg("Баъзе расмҳо бор нашуданд.")})}}
+function esave(){var p=pf(EID);if(!p)return;var b=fv("eb"),n=fv("en"),pr=+fv("ep");if(!b||!n||!pr){msg("Бренд, ном ва нархи навро пур кунед.");return}p.b=b;p.n=n;p.c=$("ec").value;p.p=pr;p.o=+fv("eo")||pr;p.sz=fv("es").split(",").map(function(s){return s.trim()}).filter(Boolean);p.col=$("ecol").value;p.imgs=EI.slice();grid();save()}
+function pcat(id,v){pf(id).c=v;grid()}
+function ask(q,fn){var o=document.getElementById("cfm");if(o)o.remove();var d=document.createElement("div");d.id="cfm";d.className="ov";d.style.zIndex=90;d.innerHTML='<div class="sheet" style="text-align:center"><div style="margin:8px 0 14px;font-size:16px">'+esc(q)+'</div><div style="display:flex;gap:8px"><button class="btn" id="cy" style="margin:0;background:#c0504d;color:#fff">Ҳа, нест кун</button><button class="btn" id="cx" style="margin:0;background:transparent;border:1px solid var(--gold);color:var(--gold)">Не</button></div></div>';document.body.appendChild(d);d.querySelector("#cx").onclick=function(){d.remove()};d.querySelector("#cy").onclick=function(){d.remove();fn()}}
+function pdel(id){ask("Маҳсулот нест карда шавад?",function(){P=P.filter(function(x){return x.id!=id});grid();al();save()})}
+function sads(){["promo","head","foot"].forEach(function(k){LN.forEach(function(l,i){S[k][l]=fv(k+i)})});renderTop();stat();foot();save()}
+function scon(){S.wa=fv("swa");S.phone=fv("sph");S.ig=fv("sig");S.tgl=fv("stg");foot();save()}
+function scat(){C.forEach(function(c,i){for(var j=1;j<5;j++)c[j]=fv("c"+i+"_"+j)||c[1]});if(fv("cn1"))C.push(["c"+Date.now(),fv("cn1"),fv("cn2")||fv("cn1"),fv("cn3")||fv("cn1"),fv("cn4")||fv("cn1")]);pills();grid();save()}
+function cdel(i){var k=C[i][0];if(P.some(function(p){return p.c==k})){msg("Дар ин категория маҳсулот ҳаст. Аввал онҳоро дар «Рӯйхат» ба категорияи дигар гузаред.");return}ask("Категория нест карда шавад?",function(){C.splice(i,1);if(cat==k)cat="all";pills();grid();save()})}
+function padd(){var b=fv("fb"),n=fv("fn"),o=+fv("fo"),p=+fv("fp");if(!b||!n||!p){msg("Бренд, ном ва нархи навро пур кунед.");return}
+var c=$("fcol");P.push({id:"p"+Date.now(),b:b,n:n,c:$("fc").value,o:o||p,p:p,col:c?c.value:"#2f6f5e",imgs:newImgs.slice(),sz:fv("fs").split(",").map(function(s){return s.trim()}).filter(Boolean)});grid();save()}
+function spw(){var a=$("np1").value,b=$("np2").value;if(a.length<6){msg("Парол ақалан 6 аломат.");return}if(a!=b){msg("Паролҳо мувофиқ нестанд.");return}api("POST","/api/password",{pw:a}).then(function(j){ss("ms_tok",j.token||"");msg("Парол иваз шуд ✓")}).catch(function(){msg("Хато.")})}
+function ppr(){var p=pf($("po").value);if(p)$("spr").value=p.p}
+var SAL={};
+function rview(id){if(SAL[id])showRc(SAL[id])}
+function sadd(){var p=pf($("po").value);if(!p)return;var q=+fv("sq")||1,pr=+fv("spr")||p.p,no=mkNo();var o={no:no,ts:Date.now(),items:[{t:p.b+" - "+p.n,s:fv("sz1"),q:q,p:pr}],tot:q*pr,cust:fv("scn"),phone:fv("scp"),addr:fv("sca")};
+DB.collection("sales").doc(no).set(o).then(function(){msg("Сабт шуд.");lsal()}).catch(function(){msg("Хато ҳангоми сабт.")})}
+function stats(A){var n=Date.now(),d0=new Date().setHours(0,0,0,0),W=[["Имрӯз",d0],["7 рӯз",n-6*864e5],["30 рӯз",n-29*864e5],["Ҳамагӣ",0]];
+var h='<div class="stg">'+W.map(function(w){var s=0,c=0;A.forEach(function(x){if(x.ts>=w[1]){s+=x.tot;c++}});return'<div class="st"><span>'+w[0]+'</span><b>'+s+'</b><small>'+c+' фурӯш</small></div>'}).join("")+'</div>';
+var D=[],mx=1;for(var k=6;k>=0;k--){var a=d0-k*864e5,b=a+864e5,s=0;A.forEach(function(x){if(x.ts>=a&&x.ts<b)s+=x.tot});D.push([a,s]);if(s>mx)mx=s}
+return h+D.map(function(x){var dt=new Date(x[0]);return'<div class="bar"><span>'+("0"+dt.getDate()).slice(-2)+"."+("0"+(dt.getMonth()+1)).slice(-2)+'</span><i style="width:'+Math.round(x[1]/mx*100)+'%"></i><b>'+x[1]+'</b></div>'}).join("")}
+function simp(){var v=$("pm").value||"",re=/ms:([A-Za-z0-9_-]+)/g,m,os=[];while((m=re.exec(v))){try{var o=dec(m[1]);if(o&&o.no&&o.items)os.push(o)}catch(e){}}
+if(!os.length){msg("Паёми дуруст нест (сатри ms: ёфт нашуд).");return}
+Promise.all(os.map(function(o){return DB.collection("sales").doc(o.no).set(o)})).then(function(){$("pm").value="";msg("Сабт шуд: "+os.length+" фурӯш");lsal()}).catch(function(){msg("Хато ҳангоми сабт.")})}
+var ST=["Нав","Дар роҳ","Таслим шуд","Бекор шуд"],SA=[];
+function lsal(){DB.collection("sales").orderBy("ts","desc").limit(1000).get().then(function(sn){SA=[];SAL={};sn.docs.forEach(function(d){var x=d.data();if(!x.items)x={no:d.id,ts:x.ts,items:[{t:x.title,s:x.size,q:x.qty,p:x.price}],tot:x.price*x.qty,cust:x.cust,phone:x.phone,addr:x.addr,st:x.st};x.id=d.id;SAL[d.id]=x;SA.push(x)});
+if($("sl")&&!$("ss"))$("sl").innerHTML='<div id="sst"></div><input id="ss" placeholder="Ҷустуҷӯ: рақам, ном, телефон" oninput="rsal()" style="margin:10px 0"><div id="slist"></div>';rsal()}).catch(function(){if($("sl"))$("sl").textContent="Хондан имконнопазир аст."})}
+function rsal(){if(!$("slist"))return;var q=$("ss").value.toLowerCase(),L=SA.filter(function(x){return(x.no+" "+x.cust+" "+x.phone+" "+x.addr).toLowerCase().indexOf(q)>-1});
+$("sst").innerHTML=stats(SA.filter(function(x){return x.st!="Бекор шуд"}));
+$("slist").innerHTML=L.map(function(x){var i0=esc(x.id);return'<div class="oc"><div class="oh"><b>'+esc(x.no)+'</b><select onchange="ost(\''+i0+'\',this.value)">'+ST.map(function(s){return'<option'+((x.st||"Нав")==s?" selected":"")+'>'+s+'</option>'}).join("")+'</select></div><div class="on">'+esc(x.cust)+' · <span class="pg">'+esc(x.phone)+'</span></div><div class="oa">'+esc(x.addr)+'<br>'+x.items.map(function(i){return esc(i.t)+(i.s?" — "+esc(i.s):"")+" × "+i.q+" = "+i.p*i.q+" сомонӣ"}).join("<br>")+'</div><div class="ot">Ҳамагӣ: '+x.tot+' сомонӣ</div><div style="display:flex;gap:8px;margin-top:10px"><button class="gb" onclick="rview(\''+i0+'\')">Чек</button><button class="rb" onclick="sdel(\''+i0+'\')">Нест</button></div></div>'}).join("")||'<div class="empty">Холӣ</div>'}
+function ost(id,v){var c=Object.assign({},SAL[id]);delete c.id;c.st=v;DB.collection("sales").doc(id).set(c).then(function(){SAL[id].st=v;SA.forEach(function(x){if(x.id==id)x.st=v});rsal()}).catch(function(){msg("Статус сабт нашуд.")})}
+function sdel(id){ask("Фурӯш нест карда шавад?",function(){DB.collection("sales").doc(id).delete().then(lsal).catch(function(){msg("Нест нашуд.")})})}
+function api(m,u,b){var h={},t=gs("ms_tok");if(t)h.Authorization="Bearer "+t;return fetch(u,{method:m,headers:h,body:b==null?undefined:((typeof b=="string"||b instanceof Blob)?b:JSON.stringify(b))}).then(function(r){if(r.status==401){AUTH=false;ss("ms_tok","");ss("ms_auth","")}return r.json().catch(function(){return{}}).then(function(j){if(!r.ok)throw j;return j})})}
+function save(){msg("Сабт мешавад...");var s2=Object.assign({},S);delete s2.ph;api("PUT","/api/data",{S:s2,P:P,C:C}).then(function(){msg("Сабт шуд ✓")}).catch(function(e){msg(e&&e.error=="unauthorized"?"Аз нав ворид шавед (⚙ → парол).":"Хато: сабт нашуд.")})}
+AST={upload:function(f){return new Promise(function(res,rej){var im=new Image(),u=URL.createObjectURL(f);im.onload=function(){var k=Math.min(1,1400/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);c.toBlob(function(b){URL.revokeObjectURL(u);api("POST","/api/upload",b).then(res,rej)},"image/jpeg",.85)};im.onerror=rej;im.src=u})}};
+DB={collection:function(){return{doc:function(id){return{set:function(o){return api("PUT","/api/order/"+encodeURIComponent(id),o)},delete:function(){return api("DELETE","/api/order/"+encodeURIComponent(id))}}},orderBy:function(){return this},limit:function(){return this},get:function(){return api("GET","/api/orders").then(function(l){return{size:l.length,docs:l.map(function(x){return{id:x.no,data:function(){return x}}})}})}}}};
+function isAdm(){return location.hash=="#admin"||!!gs("ms_tok")}
+all();
+CAN=isAdm();AUTH=!!gs("ms_tok");AT=gs("ms_tab")||"ads";renderTop();
+if(CAN&&AUTH&&gs("ms_open")=="1"){$("adm").className="open";adm()}
+window.onhashchange=function(){CAN=isAdm();renderTop()};
+fetch("/api/data").then(function(r){return r.ok?r.json():null}).then(function(d){if(d&&d.S&&d.P&&d.C){S=d.S;P=d.P;C=d.C;all()}}).catch(function(){});
+</script>
+
+
+</body></html>
